@@ -1,0 +1,23 @@
+/* Layout */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #9c1de7 0%, #cdc304 100%);
+  background-size: cover;
+  background-position: center;
+  font-family: 'IBM Plex Sans', sans-serif, 'Arial';
+}
+
+.game-box {
+  background-color: #581b98;
+  /* left: 50%;
+  position: absolute;
+  top: 50%; */
+  transform: translate(-50%, -50%);
+  width: 1000px;
+}
