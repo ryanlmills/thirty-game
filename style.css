@@ -57,6 +57,10 @@ button {
   text-align: center;
 }
 
+.active {
+  background-color: #696969;
+}
+
 /* No longer applying to p1 & p2 buttons - fix */
 button:hover {
   font-weight: bolder;

@@ -47,30 +47,35 @@ document.querySelector('.add0-1').addEventListener('click', function () {
 
 document.querySelector('.add0-2').addEventListener('click', function () {
   score += 2
+  checkWin()
   console.log('+2')
   document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add0-3').addEventListener('click', function () {
   score += 3
+  checkWin()
   console.log('+3')
   document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add1-1').addEventListener('click', function () {
   score += 1
+  checkWin()
   console.log('+1')
   document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add1-2').addEventListener('click', function () {
   score += 2
+  checkWin()
   console.log('+2')
   document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add1-3').addEventListener('click', function () {
   score += 3
+  checkWin()
   console.log('+3')
   document.querySelector('.score').textContent = score
 })
