@@ -25,7 +25,8 @@ function nextPlayer () {
 
 // Check for win condition
 function checkWin () {
-  if (scores[activePlayer] > 30) {
+  if (score >= 30) {
+    nextPlayer()
     document.querySelector('#name-' + activePlayer).textContent = 'Winner'
     document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner')
     document.querySelector('.player-' + activePlayer + '-panel').classList.add('active')
@@ -38,39 +39,39 @@ function checkWin () {
 // Add to score
 document.querySelector('.add0-1').addEventListener('click', function () {
   score += 1
-  // checkWin()
+  checkWin()
   console.log('+1')
   document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add0-2').addEventListener('click', function () {
-  roundScore += 2
+  score += 2
   console.log('+2')
-  document.querySelector('#score-0').textContent = roundScore
+  document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add0-3').addEventListener('click', function () {
-  roundScore += 3
+  score += 3
   console.log('+3')
-  document.querySelector('#score-0').textContent = roundScore
+  document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add1-1').addEventListener('click', function () {
-  roundScore += 1
+  score += 1
   console.log('+1')
-  document.querySelector('#score-1').textContent = roundScore
+  document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add1-2').addEventListener('click', function () {
-  roundScore += 2
+  score += 2
   console.log('+2')
-  document.querySelector('#score-1').textContent = roundScore
+  document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add1-3').addEventListener('click', function () {
-  roundScore += 3
+  score += 3
   console.log('+3')
-  document.querySelector('#score-1').textContent = roundScore
+  document.querySelector('.score').textContent = score
 })
 
 // Check for win condition
