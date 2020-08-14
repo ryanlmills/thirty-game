@@ -37,6 +37,11 @@ button {
   width: 1000px;
 }
 
+.score {
+  text-align: center;
+  font-size: 80px;
+}
+
 .player-0-panel, .player-1-panel {
   float: left;
   height:500px;
