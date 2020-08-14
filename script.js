@@ -6,7 +6,7 @@ Rules:
 
 // Score addition
 
-let scores, roundScore, activePlayer, gamePlaying
+let score, activePlayer, gamePlaying
 
 init()
 
@@ -18,10 +18,6 @@ function init () {
 
 function nextPlayer () {
   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0
-  roundScore = 0
-
-  document.getElementById('current-0').textContent = '0'
-  document.getElementById('current-1').textContent = '0'
 
   document.querySelector('.player-0-panel').classList.toggle('active')
   document.querySelector('.player-1-panel').classList.toggle('active')
@@ -41,10 +37,10 @@ function checkWin () {
 
 // Add to score
 document.querySelector('.add0-1').addEventListener('click', function () {
-  roundScore += 1
-  checkWin()
+  score += 1
+  // checkWin()
   console.log('+1')
-  scores[activePlayer] += roundScore
+  document.querySelector('.score').textContent = score
 })
 
 document.querySelector('.add0-2').addEventListener('click', function () {
