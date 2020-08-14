@@ -26,9 +26,15 @@ button {
   width: 100px;
 }
 
-button:hover {
-  font-weight: bolder;
-  filter: drop-shadow(0px 0px 5px #d43900);
+.game-box {
+  background-color: #278ea5;
+  height: 500px;
+  margin: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
 }
 
 .player-0-panel, .player-1-panel {
@@ -44,6 +50,12 @@ button:hover {
 
 .player-score {
   text-align: center;
+}
+
+/* No longer applying to p1 & p2 buttons - fix */
+button:hover {
+  font-weight: bolder;
+  filter: drop-shadow(0px 0px 5px #d43900);
 }
 
 .player-0-panel button {
@@ -65,17 +77,7 @@ button:hover {
 .new-game {
   position: relative;
   bottom: 40%;
+  left:50%;
   text-align: center;
-}
-
-
-.game-box {
-  background-color: #278ea5;
-  height: 500px;
-  margin: 20px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
+  width: 50px;
 }
