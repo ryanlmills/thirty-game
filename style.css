@@ -16,15 +16,35 @@ body {
   position:relative;
 }
 
+h1 {
+  text-align: center;
+}
+
 button {
   background-color: #d43900;
   border-radius: 5px;
-  width:50px;
+  width: 100px;
 }
 
 button:hover {
   font-weight: bolder;
   filter: drop-shadow(0px 0px 5px #d43900);
+}
+
+.player-0-panel button {
+  position: relative;
+  left: 25%;
+  background-color: #d43900;
+  border-radius: 5px;
+  width:50px;
+}
+
+.player-1-panel button {
+  position: relative;
+  left: 75%;
+  background-color: #d43900;
+  border-radius: 5px;
+  width:50px;
 }
 
 .game-box {
