@@ -6,14 +6,15 @@ Rules:
 
 // Score addition
 
-let score, activePlayer, gamePlaying
+let score, activePlayer, currentGame
 
 init()
 
 function init () {
   score = 0
+  document.querySelector('.score').textContent = score
   activePlayer = 0
-  gamePlaying = true
+  currentGame = true
 }
 
 function nextPlayer () {
@@ -30,7 +31,7 @@ function checkWin () {
     document.querySelector('#name-' + activePlayer).textContent = 'Winner'
     document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner')
     document.querySelector('.player-' + activePlayer + '-panel').classList.add('active')
-    gamePlaying = false
+    currentGame = false
   } else {
     nextPlayer()
   }
