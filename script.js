@@ -74,7 +74,7 @@ document.querySelector('.add1-3').addEventListener('click', function () {
   document.querySelector('.score').textContent = score
 })
 
-// Check for win condition
+// New game button
 
 document.querySelector('.new-button').addEventListener('click', function () {
   init()
