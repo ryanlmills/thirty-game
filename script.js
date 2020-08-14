@@ -37,6 +37,7 @@ function checkWin () {
   }
 }
 
+// Need to implement currentGame if condition
 // Add to score
 document.querySelector('.add0-1').addEventListener('click', function () {
   score += 1

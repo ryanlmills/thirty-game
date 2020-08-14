@@ -26,6 +26,14 @@ button {
   width: 100px;
 }
 
+.button.disabled {
+  visibility: hidden;
+}
+
+.active .button {
+  visibility: visible;
+}
+
 .game-box {
   background-color: #278ea5;
   height: 500px;
@@ -61,7 +69,6 @@ button {
   background-color: #696969;
 }
 
-/* No longer applying to p1 & p2 buttons - fix */
 button:hover {
   font-weight: bolder;
   filter: drop-shadow(0px 0px 5px #d43900);
